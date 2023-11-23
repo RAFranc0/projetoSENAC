@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Tratoria del Gusto</title>
+</head>
+
+<body>
+    <header id="cabeçalho">
+
+        <div class="menu-cabeçalho">
+            <a href="home.html">Pagina Inicial</a>
+
+            <a href="cardapio.html">Cardápio</a>
+        </div>
+
+        <img src="imagens/logo-cabeçalho.png" alt="" class="logo-cabeçalho">        
+    </header>
+
+    <div id="container">
+        <div class="central">
+
+            <h2 id="home-h2"> Promoções do Dia!! </h2>
+
+            <div class="anuncios">
+                <div class="img-promo">
+                    <img src="imagens/promo-marguerita.png" alt="">
+                </div>
+
+                <div class="txt-promo">
+
+                    <h2>Marguerita</h2>
+
+                    <p class="preços-promo">
+                        <span>R$49,90</span> - R$35,90 - Grande (6 pedaços)</br>
+                        <span>R$39,90</span> - R$25,90 - Média (4 pedaços)
+                    </p>
+
+                    <p class="ingredientes">Ingredientes: molho de tomate da casa, mussarela de búfala, manjericão</p>
+
+                </div>
+            </div>
+
+            <div class="anuncios">
+                <div class="img-promo">
+                    <img src="imagens/promo-aliche.png" alt="">
+                </div>
+
+                <div class="txt-promo">
+
+                    <h2>Aliche</h2>
+
+                    <p class="preços-promo">
+                        <span>R$49,90</span> - R$35,90 - Grande (6 pedaços)</br>
+                        <span>R$39,90</span> - R$25,90 - Média (4 pedaços)
+                    </p>
+
+                    <p class="ingredientes">Ingredientes: molho de tomate da casa, aliche, mussarela de búfala,
+                        alcaparras, azeitonas pretas</p>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="menu-lateral">
+            <h3>Pedido Expresso</h3>
+
+            <div class="pedido-expresso">
+                <form action="" id="formulario" name="formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="11999999999" required><br>
+
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required>
+
+                    <p><label for="sabor">Sabor:</label>
+                        <select name="sabores" id="sabores" required>
+                            <option value="">Escolha um sabor</option>
+                            <option value="1">Aliche</option>
+                            <option value="2">Funghi</option>
+                            <option value="3">Margherita</option>
+                            <option value="4">Napoletana</option>
+                            <option value="5">Prosciutto e Rucola</option>
+                            <option value="6">Pepperoni</option>
+                            <option value="7">Quattro Formaggi</option>
+                        </select>
+                    </p>
+
+                    <p><label for="tamanho">Tamanho:</label>
+                        <select name="tamanhos" id="tamanhos" required>
+                            <option value="">Escolha o tamanho</option>
+                            <option value="1">Média (4 pedaços)</option>
+                            <option value="2">Grande (6 pedaços)</option>
+                        </select>
+                    </p>
+
+                    <button type="button" class="botao" onclick="validacao()">
+                        Finalizar
+                    </button>
+                    <button type="reset" class="botao">Limpar</button>
+                </form>
+            </div>
+
+            <div class="orçamento">
+                <p>Pedido <span>R$0,00</span></p>
+
+                <p>Frete <span>R$0,00</span></p>
+                
+                <hr>
+
+                <p>Total <span>R$0,00</span></p>
+            </div>
+        </div>
+    </div>
+    <h3 class="carrossel-h3">Conheça nosso espaço:</h3>
+    <div class="container-carrossel">
+        <button id="img-anterior"> <img src="imagens/seta.png" alt="img-anterior"> </button>
+        <div class="container-imagens">
+            <img src="imagens/externa.png" alt="imagem-carrossel" class="slider on">
+            <img src="imagens/interna1.png" alt="imagem-carrossel" class="slider">
+            <img src="imagens/interna2.png" alt="imagem-carrossel" class="slider">
+        </div>
+        <button id="img-seguinte"> <img src="imagens/seta.png" alt="img-seguinte"></button>
+    </div>
+    </div>
+</body>
+
+</html>

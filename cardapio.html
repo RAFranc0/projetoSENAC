@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Tratoria del Gusto</title>
+</head>
+
+<body>
+    <header id="cabeçalho">
+
+        <div class="menu-cabeçalho">
+            <a href="home.html">Pagina Inicial</a>
+
+            <a href="">Cardápio</a>
+        </div>
+
+        <img src="imagens/logo-cabeçalho.png" alt="" class="logo-cabeçalho">
+    </header>
+
+    <div id="container">
+        <div class="central">
+            <div class="cardapio">
+                <h2 id="cardapio-h2"> Cardápio </h2>
+
+                <p>
+                <h4><span>Aliche</span> - R$39,90/R$49,90</h4>
+                <p>Molho de tomate da casa, mussarela de búfala, aliche, alcaparras, azeitonas pretas.</p>
+                </p>
+
+                <p>
+                <h4><span>Funghi</span> - R$39,90/R$49,90</h4>
+                <p>Molho de tomate da casa, queijo mussarela, cogumelos (Paris), azeite de oliva, alho, orégano.</p>
+                </p>
+
+                <p>
+                <h4><span>Margherita</span> - R$39,90/R$49,90</h4>
+                <p>Molho de tomate da casa, mussarela de búfala, tomates frescos, manjericão, azeite de oliva, sal e pimenta.</p>
+                </p>
+
+                <p>
+                <h4><span>Napoletana</span> - R$39,90/R$49,90</h4>
+                <p>Molho de tomate da casa, alho, orégano, azeite de oliva, manjericão fresco.</p>
+                </p>
+
+                <p>
+                <h4><span>Prosciutto e Rucola</span> - R$39,90/R$49,90</h4>
+                <p>Molho de tomate da casa, mussarela, presunto de Parma (prosciutto), rúcula fresca, azeite de oliva.</p>
+                </p>
+
+                <p>
+                <h4><span>Pepperoni</span> - R$39,90/R$49,90</h4>
+                <p>Molho de tomate da casa, mussarela, pepperoni (salame picante), azeite de oliva.</p>
+                </p>
+
+                <p>
+                <h4><span>Quattro Formaggi</span> - R$39,90/R$49,90</h4>
+                <p>Molho de tomate da casa, mussarela, queijo gorgonzola, queijo parmesão, queijo provolone.</p>
+                </p>
+            </div>
+        </div>
+
+        <div class="menu-lateral">
+            <h3>Pedido Expresso</h3>
+
+            <div class="pedido-expresso">
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="1199999-9999"
+                        pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required><br>
+
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep">
+
+                    <p><label for="sabor">Sabor:</label>
+                        <select name="sabores">
+                            <option value="">Escolha um sabor</option>
+                            <option value="1">Marguerita</option>
+                            <option value="2">Aliche</option>
+                        </select>
+                    </p>
+
+                    <p><label for="tamanho">Tamanho:</label>
+                        <select name="tamanhos">
+                            <option value="">Escolha o tamanho</option>
+                            <option value="1">Broto (4 pedaços)</option>
+                            <option value="2">Média (8 pedaços)</option>
+                        </select>
+                    </p>
+
+                    <input type="button" id="finalizar" value="Finalizar">
+                    <input type="reset" id="reset" value="Reiniciar">
+                </form>
+            </div>
+
+            <div class="orçamento">
+                <p>Pedido <span>R$0,00</span></p>
+
+                <p>Frete <span>R$0,00</span></p>
+
+                <hr>
+
+                <p>Total <span>R$0,00</span></p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {}
+
+/* ------------------------------FONTES------------------------------ */
+
+@font-face {
+    font-family: Puritan;
+    src: url(fonts/Puritan-Italic.ttf);
+}
+
+@font-face {
+    font-family: Italianno;
+    src: url(fonts/Italianno-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+
+/* ------------------------------CABEÇALHO------------------------------ */
+
+#cabeçalho {
+    background-color: #D9D9D9;
+    position: relative;
+}
+
+#cabeçalho img {
+    width: 100%;
+}
+
+.menu-cabeçalho {
+    width: 512px;
+    height: 48px;
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+    background-color: #D9D9D9;
+    text-align: center;
+}
+
+.menu-cabeçalho a {
+    position: relative;
+    text-decoration: none;
+    font-family: Puritan;
+    font-size: 1.2em;    
+    top: 25%;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black
+}
+
+.menu-cabeçalho a:hover {
+    color: #A8232B;
+}
+
+/* ------------------------------CONTAINER------------------------------ */
+
+#container {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------CENTRAL------------------------------ */
+
+.central,
+.menu-lateral {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.central {
+    width: 75%;
+    height: 100%;
+    margin: 5px 5px 0px 25px;
+}
+
+.central #home-h2 {
+    font-family: Italianno;
+    font-size: 2.5em;
+    text-decoration: underline 2px;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    letter-spacing: 2px;
+}
+
+.central .anuncios {
+    width: 90%;
+    height: 256px;
+    background-color: #D9D9D9;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-promo,
+.txt-promo {
+    margin: 5px;
+}
+
+/* ------------------------------IMAGEM PROMOÇÃO------------------------------ */
+.central .img-promo {
+    width: 224px;
+    height: 128px;
+}
+
+.img-promo img {
+    width: 100%;
+}
+
+/* TEXTO PROMOÇÃO */
+
+.central .txt-promo {
+    width: 70%;
+    height: 90%;
+    text-align: center;
+}
+
+.txt-promo h2 {
+    font-family: Puritan;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.txt-promo .preços-promo {
+    font-family: Italianno;
+    font-size: 2.5em;
+}
+
+.txt-promo .preços-promo span {
+    color: #A8232B;
+    text-decoration: line-through 2px;
+}
+
+.txt-promo .ingredientes {
+    font-family: Puritan;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+/* ------------------------------CARROSSEL------------------------------ */
+
+.container-carrossel {
+    display: flex;
+    width: 100%;
+    height: 550px;
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #D9D9D9;
+}
+
+.carrossel-h3 {
+    text-align: center;
+    background-color: #D9D9D9;
+    font-family: Puritan;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+.container-imagens {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+}
+
+.container-imagens img {
+    width: 500px;
+    height: 500px;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 1s;
+}
+
+.on {
+    opacity: 1;
+}
+
+#img-anterior, #img-seguinte {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+#img-anterior:active, #img-seguinte:active
+{
+    opacity: 0.3;
+    transition: opacity .1s;
+}
+
+#img-anterior img, #img-seguinte img {
+    width: 100%;
+    height: 100%;
+}
+
+#img-seguinte {
+    transform: rotate(180deg);
+}
+
+
+/* ------------------------------MENU LATERAL------------------------------ */
+
+.menu-lateral {
+    border: 1px solid blue;
+    background-color: #FFFFFF;
+    width: 21%;
+    height: 576px;
+    margin: 5px 5px 0px 5px;
+    position: sticky;
+}
+
+.menu-lateral h3 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.3em;
+    color: #A8232B;
+    text-decoration: underline 2px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+.menu-lateral .pedido-expresso {
+    width: 100%;
+    height: 60%;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.pedido-expresso label {
+    font-family: Italianno;
+    font-size: 2em;
+    text-decoration: underline 1px;
+}
+
+.pedido-expresso input,
+.pedido-expresso select {
+    margin: 20px 25px 0px 5px;
+    width: 150px;
+}
+
+.botao {
+    width: 100px;
+    height: 20px;
+    font-family: Puritan;
+    font-size: 1em;
+    margin: 20px 25px 0px -5px;
+}
+
+/* ------------------------------ORÇAMENTO------------------------------ */
+
+.menu-lateral .orçamento {
+    width: 70%;
+    height: 25%;
+    margin: 0 auto;
+    text-align: center;
+    word-spacing: 60px;
+}
+
+.orçamento p {
+    font-family: Puritan;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.orçamento span {
+    font-family: Puritan;
+    font-size: 0.9em;
+}
+
+.orçamento hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: darkgray;
+    margin-top: 2px;
+}
+
+/* ------------------------------CARDAPIO------------------------------ */
+
+.cardapio #cardapio-h2 {
+    font-family: Italianno;
+    font-size: 2.5em;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    background-color: none;
+}
+
+
+.cardapio h4 {
+    font-family: Italianno;
+    font-size: 2.2em;
+}
+
+.cardapio h4 span {
+    color: #A8232B;
+    letter-spacing: 2px;
+}
+
+.cardapio p {
+    font-family: Puritan;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
